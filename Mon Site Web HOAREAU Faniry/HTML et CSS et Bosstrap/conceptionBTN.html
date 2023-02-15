@@ -1,0 +1,118 @@
+<!DOCTYPE html >
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Faniry">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Histoire de la bataille Navale</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/conception.css" />
+    <link rel="shortcut icon" href="image/Bateau.ico">
+</head>
+<body>
+    <header>
+        <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="video/fondecran.mp4" type="video/mp4">
+            <source src="/fondecran2.ogv" type="video/ogg">
+        </video>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="image/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span ><i class="fa fa-bars"></i></span>   
+            </button>s
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="AcceuilBTN.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="règleBTN.html">Règles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="histoireBTN.html">Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="conceptionBTN.html">Conception</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jouerBTN.html">Jouer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="titre">
+        <h1>Conception du jeu</h1>
+    </div>
+    <div class="paragraphe">
+        <h3>Interface</h3>
+        <p>L'interface de ce jeu est faite à partir de la bibliothèque tkinter.</p>
+        <img src="image/programme/interface.png" alt="">
+    </div>
+    <div class="paragraphe">
+        <h3>Menu</h3>
+        <img src="image/programme/menu.png" alt="">
+        <p style="margin-top: 10px;">Le Menu contient: </p>
+        <ul>
+            <li>Un Bouton Continuer pour pouvoir continuer la partie commencer</li>
+            <li>Un Bouton Jouer contre Ordinateur qui commence une nouvelle partie</li>
+            <li>Un Bouton Jouer en ligne qui permetra bien sûr de jouer en ligne
+                mais n'est pas encore fonctionnel</li>
+            <li>Un Bouton Paramètre qui permet de faire des réglages</li>
+        </ul>  
+    </div>
+    <div class="paragraphe">
+        <h3>Menu</h3>
+        <img src="image/programme/parametre.png" alt="">
+        <p style="margin-top: 10px;">Paramètre contient: </p>
+        <ul>
+            <li>Un Slide pour la modification du Volume, le volume qui nécessite la 
+                bibliothèques pygame
+            </li>
+            <li>Un Scale pour la modification de la Résolution</li>
+            <li>Un Futur Scale pour la modification de la langue mais elle n'est pas encore fonctionnelle</li>
+        </ul>  
+    </div>
+    <div class="paragraphe">
+        <h3>Visualisation d'une partie</h3>
+        <img id="v" src="image/programme/visualisation.png" alt=""> 
+    </div>
+    <div class="paragraphe">
+        <h3>Structure</h3>
+        <img id="v"  src="image/programme/structure.png" alt="">
+        <p>Le code source du jeu suit l'architecture MVC(Model View Controler),<br>
+        le code est donc réparti en trois fichier:</p>
+        <h4>Le fichier controleur: controleur.py</h4>
+        <p>Ce fichier permet de lancer le jeu et est lié au deux autre fichier. 
+            Ce fichier permet aussi l'interaction entre l'utilisateur et le jeu, 
+            c'est-à-dire que les évenement de lasouris ou du clavier par exemple.
+        </p>
+        <h4>Le fichier vue: view.py</h4>
+        <p>Ce fichier permet d'afficher le jeu (grille, bateaux, explosions,
+             le son, les Boutons,...) dans une fenêtre. La librairie Tkinter 
+             y est intégré grace à Python</p>
+        <h4>Le fichier vue: data.py</h4>
+        <p>Ce fichier permet de gérer l'état du jeu (bateau coulé, 
+            coordonnées des bateaux, carte de coté 10x10,...) et 
+            elle permet aussi de modifier le jeu en générale. La grille 
+            est par exemple représenté par une liste de liste de coté 10x10.
+        </p>     
+    </div>
+    <footer>
+        <p>
+            <a href="MentionLegaleBTN.html">Mentions légales</a>
+        </p>
+        <p class="auteur">Réalisé par Faniry - en 2022</p> 
+        <p>
+            <a href="contactBTN.html">Nous contacter</a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

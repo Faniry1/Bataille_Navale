@@ -1,0 +1,129 @@
+<!DOCTYPE html >
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Faniry">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Règles de la bataille Navale</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/règle.css" />
+    <link rel="shortcut icon" href="image/Bateau.ico">
+</head>
+<body>
+    <header>
+        <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="video/fondecran.mp4" type="video/mp4">
+            <source src="fondecran2.ogv" type="video/ogg">
+        </video>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top ">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="image/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span ><i class="fa fa-bars"></i></span>   
+            </button>s
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="AcceuilBTN.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="règleBTN.html">Règles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="histoireBTN.html">Histoire</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conception</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jouerBTN.html">Jouer</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="règles">
+        <h1 id="titre" >Règle De La Bataille Navalle</h1>
+        <div class="paragraphe">
+            <p>
+                Ce jeu de sociéte se joue à deux, l'un contre l'autre sur 
+                deux grilles où sont placés 5 navires mis en place par les joueurs.
+            </p>
+            <p>
+                Le but étant de faire couler tous les navires de l’adversaire. 
+                C’est à la fois un jeu de réflexion et un jeu de hasard. 
+            </p>
+        </div>
+        <div class="paragraphe">
+            <h2>
+                Il faut par Joueur
+            </h2>
+            <ol>
+                <li>Une grille de jeu numérotée de 1 à 10 horizontalement
+                     et de A à J verticalement</li>
+                <li>1 porte avion (5 cases)</li>
+                <li>1 croiseur(4 cases)</li>
+                <li>1 contre torpilleur (3 cases)</li>
+                <li>1 sous-marin (3 cases)</li>
+                <li>1 torpilleur (2 cases)</li>
+            </ol>
+        </div>
+        <div class="paragraphe">
+            <h2>Comment Jouer</h2>
+            <p>
+                Au début du jeu, chaque joueur place à sa guise tous les 
+                bateaux sur sa grille de façon stratégique. Le but étant 
+                de compliquer au maximum la tache de son adversaire, 
+                c’est-à-dire détruire tous vos navires. Bien entendu, 
+                le joueur ne voit pas la grille de son adversaire.
+                Une fois tous les bateaux en jeu, la partie peut 
+                commencer.. Un à un, les joueurs se tire dessus pour 
+                détruire les navires ennemis.
+            </p>
+            <p>     
+                Exemple le joueur dit a voit haute H7 correspondant à 
+                la case au croisement de la lettre H et du numéro 7 sur 
+                les côtés des grilles.
+            </p>
+            <p>
+                Si un joueur tire sur un navire ennemi, l’adversaire 
+                doit le signaler en disant « <strong>touché</strong>». 
+                Il peut pas jouer deux fois de suite et doit attendre le tour de 
+                l’autre joueur.<br>
+                Si le joueur ne touche pas de navire, l’adversaire le 
+                signale en disant « <strong>raté</strong>» <br>
+                Si le navire est entièrement touché l’adversaire doit dire 
+                « <strong>touché coulé</strong> ».
+            </p>
+        </div>
+        <div class="paragraphe">
+            <h2>Gagné à la bataille Navale</h2>
+            <p>Une partie de bataille navale se termine lorsque l’un des joueurs n’a plus de navires</p>
+        </div>
+        <div class="paragraphe">
+            <h2>Astuces pour gagné</h2>
+            <p>Pour gagner plus rapidement, vous pouvez jouer vos 
+                tirs en croix, étant donné que le plus petit navire 
+                fait deux cases alors vous ne pourrez éviter aucun 
+                autre bateau sur votre chemin. Cette méthode est 
+                infaillible car elle est purement logique.
+            </p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>
+            <a href="MentionLegaleBTN.html">Mentions légales</a>
+        </p>
+        <p class="auteur">Réalisé par Faniry - en 2022</p> 
+        <p>
+            <a href="contactBTN.html">Nous contacter</a>
+        </p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
